@@ -31,6 +31,11 @@
     background-color: var(--color-imageBackground);
 }
 
+.imageContainer img{
+    width: 100%;
+    padding: 1px;
+}
+
 .formContainer{
     display: flex;
     flex-direction: column;
@@ -41,6 +46,7 @@
 }
 
 .formContainer form{
+    padding-inline: 24px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -112,6 +118,7 @@
 .lembreEsqueceu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .lembreContainer{
@@ -133,6 +140,11 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--color-textAndBackground);
+}
+
+.esqueceuContainer a{
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 .formButtons{
@@ -175,4 +187,39 @@
 .signUpText a{
     text-decoration: none;
     color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .mobileDeviceOff{
+        display: none;
+    }
+
+    .formContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .titleWelcome{
+        font-size: 16px;
+    }
+
+    .titleLogin{
+        font-size: 24px;
+    }
+
+    .lembreEsqueceu{
+        font-size: 14px;
+    }
+
+    .formButtons button{
+        font-size: 16px;
+    }
+
+    .signUpText{
+        font-size: 16px;
+    }
 }

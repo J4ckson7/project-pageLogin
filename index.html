@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+</head>
+<body>
+    <div class="pageContainer">
+        <section>
+            <div class="imageContainer">
+                <img src="./images/svg.svg" alt="image">
+            </div>
+        </section>
+
+        <main>
+            <div class="formContainer">
+                <form method="post" action="/login">
+                    <div class="titles">
+                        <p class="titleWelcome">
+                            Bem-vindo de volta
+                        </p>
+
+                        <p class="titleLogin">
+                            Faça login na sua conta
+                        </p>
+                    </div>
+
+                    <div class="inputs">
+                        <div class="campEmail">
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="exemplo@gmail.com">
+                        </div>
+                        <div class="campPassword">
+                            <label for="email">Senha</label>
+                            <input type="email" placeholder="0123456789">
+                        </div>
+                    </div>
+
+                    <div class="lembreEsqueceu">
+                        <div class="lembreContainer">
+                            <input type="checkbox" name="Lembre de mim" id="Lembre de mim">
+                            <label>Lembre de mim</label>
+                        </div>
+                        <div class="esqueceuContainer">
+                            <a href="#">Esqueceu sua senha ?</a>
+                        </div>
+                    </div>
+
+                    <div class="formButtons">
+                        <div class="enterContainer">
+                            <button type="submit">Entrar na conta</button>
+                        </div>
+                        <div class="googleContainer">
+                            <button class="googleAlternative" type="submit">
+                                <img src="./images/icon.svg" alt="logo Google">
+                                Ou faça login com o google
+                            </button>
+                        </div>
+                    </div>
+
+                    <section class="signUpContainer">
+                        <p class="signUpText">
+                            Não tem uma conta? <a href="#" ria-label="Cadastre-se">Cadastre-se</a>
+                        </p>
+                    </section>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
